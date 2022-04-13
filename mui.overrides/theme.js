@@ -1,5 +1,6 @@
 import { InputBase, ThemeOptions } from "@mui/material";
 import { createTheme, styled, alpha } from "@mui/material/styles";
+import { Badge } from "@mui/material";
 const themeOptions = {
   components: {
     MuiMenuItem: {
@@ -51,6 +52,15 @@ const themeOptions = {
   },
 };
 
+const StyledBadge = styled(Badge)(({ theme }) => ({
+  "& .MuiBadge-badge": {
+    right: -8,
+    top: 5,
+    border: `2px solid ${theme.palette.background.paper}`,
+    padding: "0 4px",
+  },
+}));
+
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   border: "1px solid #ebebeb",
@@ -98,4 +108,4 @@ const theme = createTheme({
   ...themeOptions,
 });
 
-export { theme, Search, SearchIconWrapper, StyledInputBase };
+export { theme, Search, SearchIconWrapper, StyledInputBase, StyledBadge };

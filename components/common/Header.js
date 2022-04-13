@@ -16,7 +16,7 @@ import {
 } from "../../mui.overrides/theme";
 export default function Header() {
   return (
-    <AppBar elevation={1} position="static">
+    <AppBar elevation={0} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
