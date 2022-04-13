@@ -1,7 +1,5 @@
 import styles from "./PageTopButtons.module.css";
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { Badge } from "@mui/material";
+
 import { StyledBadge } from "../../mui.overrides/theme";
 const PageTopButtons = () => {
   return (
