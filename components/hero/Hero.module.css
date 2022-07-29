@@ -1,6 +1,16 @@
 .box {
     background-image: url(../../assets/images/intro-bg.jpg);
     height: 70vh;
-    padding: 5rem 0;
+    padding: 2rem 0rem;
     
+  
+}
+.box_left{
+    background-color: rgb(194,151,99);
+    background-image: url(../../assets/images/slide-1.png);
+    background-position: right;
+    min-height: 60vh;
+}
+.box_right {
+
 }
